@@ -33,7 +33,7 @@ loop do
         end
       end
     end
-  rescue PG::NoResultError, PG::UnableToSend
+  rescue PG::NoResultError, PG::UnableToSend => e
     puts e
   end
   sleep 2
